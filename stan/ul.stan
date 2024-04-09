@@ -30,8 +30,8 @@ parameters {
 
 // The model to be estimated.
 model {
-\\PRIOR
+//PRIOR
   mi ~ normal(0,2.5);
-\\LIKELIHOOD
+//LIKELIHOOD
   Y ~ UL(mi);
 }
