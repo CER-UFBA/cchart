@@ -1,11 +1,26 @@
-O repositório está organizado da seguinte maneira: 
+Este repositorio está associado a publicação entitulada "GRÁFICOS DE CONTROLE PARA PROCESSOS DE CONTAGEM E UNITÁRIOS: UMA ABORDAGEM DE CEP CLÁSSICO E BAYESIANO", na Revista do Seminário Internacional de Estatística com R, url: https://periodicos.uff.br/anaisdoser/article/view/55187. Este trabalho visou promover a difusão de gráficos de controle para o monitoramento estatístico de processos de dados de contagem ou contínuos no intervalo (0,1), como é o caso de taxas, índices e proporções; sendo ambos processos não normais.
 
-- Os arquivos "bayesian function chart.R" e "classical function chart.R" são os programas no qual a função é implementada em sua versão bayesiana e frequentista, respectivamente. 
+O repositório está organizado da seguinte maneira:
+
+- Os arquivos "bayesian function chart.R" e "classical function chart.R" são programas que estimam os parâmetros e graficação as cartas de controles, onde as respectivas funções de estimação estão implementadas na versão bayesiana e frequentista.
 
 - O arquivo "support functions.R" contém funções que serão utilizada no plot.control.
 
-- A pasta "stan" contém os arquivos stan necessários para fazer a estimação bayesiana; 
+- A pasta "stan" contém os arquivos STAN, que incorporam as funções de densidades necessárias para a estimação via aproximação numérica bayesiana Hamiltonian Monte Carlo (HMC).
 
-- A pasta "aplication" contém os arquivos R com as aplicações.
+| STAN File | Probability Function |
+| --- | --- |
+| --- | **(Countable Response Variable)** |
+| `PLindley.stan` | Poisson-Lindley |
+| `PShanker.stan` | Poisson-Shanker |
+| `PSujatha.stan` | Poisson-Sujatha |
+| `Pois.stan`     | Poisson         |
+| --- | **(Unit Response Variable)**  |
+| `beta.stan`     | Beta            |
+| `kumar.stan`    | Kumaraswamy     |
+| `uhn.stan`      | unit-half-normal |
+| `ul.stan`       | unit-Lindley    |
 
-- A pasta "data" contém os dados utilizados nas aplicações.
+- A pasta "aplication" contém os arquivos R e que originam a Figura 1 do artigo com a aplicação de uma amostra dos registros mínimos diários da umidade relativa do ar da cidade de Copiapó - Atacama/Chile.
+
+- A pasta "data" contém os registros utilizados na aplicação de umidade relativa, dos registros mínimos diários do período de dezembro de 2016 a dezembro de 2020.
