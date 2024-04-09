@@ -1,3 +1,8 @@
+//
+// This Stan program defines a simple model, with a
+// vector of values 'Y' modeled as Poisson-Sujatha distributed.
+//
+
 functions{
   real PSD_log(vector x, real t){
     vector[num_elements(x)] prob;
@@ -17,7 +22,7 @@ data {
   vector[N] Y;
 }
 
-// The parameters accepted by the model.
+// The parameter 't' accepted by the model.
 parameters {
   real <lower = 0> t;
 }
