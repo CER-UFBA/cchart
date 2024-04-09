@@ -2,9 +2,9 @@ Este repositorio está associado a publicação entitulada "GRÁFICOS DE CONTROL
 
 O repositório está organizado da seguinte maneira:
 
-- Os arquivos "bayesian function chart.R" e "classical function chart.R" são programas que estimam os parâmetros e graficação as cartas de controles, onde as respectivas funções de estimação estão implementadas na versão bayesiana e frequentista.
+- Os arquivos `bayesian_function_chart.R` e `classical_function_chart.R` são programas que estimam os parâmetros e graficação as cartas de controles, onde as respectivas funções de estimação estão implementadas na versão bayesiana e frequentista.
 
-- O arquivo "support functions.R" contém funções que serão utilizada no plot.control.
+- O arquivo `support_functions.R` contém funções que serão utilizada na função grafica das cartas de controles `plot.control`.
 
 - A pasta "stan" contém os arquivos STAN, que incorporam as funções de densidades necessárias para a estimação via aproximação numérica bayesiana Hamiltonian Monte Carlo (HMC).
 
