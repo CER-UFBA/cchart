@@ -1,16 +1,10 @@
 //
 // This Stan program defines a simple model, with a
-// vector of values 'y' modeled as normally distributed
-// with mean 'mu' and standard deviation 'sigma'.
-//
-// Learn more about model development with Stan at:
-//
-//    http://mc-stan.org/users/interfaces/rstan.html
-//    https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started
+// vector of values 'Y' modeled as Poisson-Lindley distributed.
 //
 
 functions{
-  real ASN_log(vector x, real mu){
+  real PL_log(vector x, real mu){
     vector[num_elements(x)] prob;
     real lprob;
     real t;
@@ -33,15 +27,13 @@ data {
 }
 
 // The parameters accepted by the model. Our model
-// accepts two parameters 'mu' and 'sigma'.
+// accepts one parameter 'mu'.
 parameters {
   real <lower = 0> mu;
 }
 
-// The model to be estimated. We model the output
-// 'y' to be normally distributed with mean 'mu'
-// and standard deviation 'sigma'.
+// The model to be estimated.
 model {
   //LIKELIHOOD
-  Y ~ ASN(mu);
+  Y ~ PL(mu);
 }
