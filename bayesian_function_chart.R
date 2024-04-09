@@ -1,4 +1,4 @@
-source('support functions.R')
+source('support_functions.R')
 
 plot.control = function(x, type = c('unit', 'count'), fase1 = 0.7,alpha = .1, L = 3, iter = 1000,
                         xlab = 'a', ylab = 'b', tit = NULL, size = 1000, size = 10, ...){
