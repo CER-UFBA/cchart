@@ -1,4 +1,4 @@
-Este repositorio está associado a publicação entitulada "GRÁFICOS DE CONTROLE PARA PROCESSOS DE CONTAGEM E UNITÁRIOS: UMA ABORDAGEM DE CEP CLÁSSICO E BAYESIANO", na Revista do Seminário Internacional de Estatística com R, url: https://periodicos.uff.br/anaisdoser/article/view/55187. Este trabalho visou promover a difusão de gráficos de controle para o monitoramento estatístico de processos de dados de contagem ou contínuos no intervalo (0,1), como é o caso de taxas, índices e proporções; sendo ambos processos não normais.
+Este repositorio está associado a publicação intitulada "GRÁFICOS DE CONTROLE PARA PROCESSOS DE CONTAGEM E UNITÁRIOS: UMA ABORDAGEM DE CEP CLÁSSICO E BAYESIANO", na Revista do Seminário Internacional de Estatística com R, url: https://periodicos.uff.br/anaisdoser/article/view/55187. Este trabalho visou promover a difusão de gráficos de controle para o monitoramento estatístico de processos de dados de contagem ou contínuos no intervalo (0,1), como é o caso de taxas, índices e proporções; sendo ambos processos não normais.
 
 O repositório está organizado da seguinte maneira:
 
