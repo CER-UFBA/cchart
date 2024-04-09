@@ -31,9 +31,9 @@ parameters {
 
 // The model to be estimated. 
 model {
-  \\ PRIORS
+  // PRIORS
   alp ~ normal(0,2.5);
   sc ~ normal(0, 2.5);
-  \\ LIKELIHOOD
+  // LIKELIHOOD
   Y ~ BT(alp, sc);
 }
