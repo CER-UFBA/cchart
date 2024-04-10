@@ -25,13 +25,13 @@ data {
 // The parameter accepted by the model. Our model
 // accepts one parameter 'mi'.
 parameters {
-  real <lower=0,upper=1> mi;
+  real <lower=0> mi;
 }
 
 // The model to be estimated.
 model {
 //PRIOR
-  mi ~ normal(0,2.5);
+  mi ~ gamma(0.001,0.001);
 //LIKELIHOOD
   Y ~ UL(mi);
 }
