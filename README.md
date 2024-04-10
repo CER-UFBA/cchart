@@ -20,11 +20,11 @@ CASO UNITÁRIO - O processo também será considerado invariante, centrado na me
 
 O repositório está organizado da seguinte maneira:
 
-- Os arquivos `bayesian_function_chart.R` e `classical_function_chart.R` são programas que estimam os parâmetros e graficação as cartas de controles, onde as respectivas funções de estimação estão implementadas na versão bayesiana e frequentista.
+- Os arquivos `bayesian_function_chart.R` e `classical_function_chart.R` são programas que estimam os parâmetros e graficação das cartas de controle, onde as respectivas funções de estimação estão implementadas na versões Bayesiana e Frequentista.
 
-- O arquivo `support_functions.R` contém funções que serão utilizada na função grafica das cartas de controles `plot.control`.
+- O arquivo `support_functions.R` contém funções que serão utilizadas na função gráfica das cartas de controle `plot.control`.
 
-- A pasta "stan" contém os arquivos STAN, que incorporam as funções de densidades necessárias para a estimação via aproximação numérica bayesiana Hamiltonian Monte Carlo (HMC).
+- A pasta "stan" contém os arquivos STAN, que incorporam as funções de densidade necessárias para a estimação via aproximação numérica Bayesiana Hamiltonian Monte Carlo (HMC).
 
 | STAN File | Probability Density | Function | Parameter(s) |
 | --- | --- | --- | --- |
@@ -39,9 +39,9 @@ O repositório está organizado da seguinte maneira:
 | `uhn.stan`      | unit-half-normal | $` \displaystyle f(y;a) = \frac{2(c(1 − a))}{a(1 − y)^2} \phi\left( \frac{c(1-a)y}{a(1 − y)}\right) `$ | $0 < a < 1$ , $c=\Phi^{-1}(0.75) = 0.67499$ |
 | `ul.stan`       | unit-Lindley    | $` \displaystyle f(y;\mu)= \frac{(1 - \mu)^2 \times exp\left(-\frac{y(1- \mu)}{\mu(1-y)} \right)}{\mu(1- y)^3} `$ | $\mu > 0$ |
 
-<p align="right">onde $\phi(\cdot)$ é a função de densidade da normal padrão.</p>
+<p align="right">onde $\phi(\cdot)$ é a função de densidade e $\Phi(\cdot)$ a função acumulada da normal padrão.</p>
 
 
-- A pasta "aplication" contém os arquivos R e que originam a Figura 1 do artigo com a aplicação de uma amostra dos registros mínimos diários da umidade relativa do ar da cidade de Copiapó - Atacama/Chile.
+- A pasta "aplication" contém os arquivos R e que originam a Figura 1 do artigo com a aplicação de uma amostra dos registros mínimos diários da umidade relativa do ar na cidade de Copiapó - Atacama/Chile.
 
 - A pasta "data" contém os registros utilizados na aplicação de umidade relativa, dos registros mínimos diários do período de dezembro de 2016 a dezembro de 2020.
