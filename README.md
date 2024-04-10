@@ -10,7 +10,7 @@ CASO DE CONTAGEM - Um processo univariado é considerado invariante, centrado na
 
 para os casos de processo em que a suposição de média não é igual à variância, se adota as distribuições Poisson modificadas (Poisson-Lindley, Poisson-Shanker e Poisson-Sujatha).
 
-CASO UNITÁRIO - O processo também será considerado invariante, centrado na medida central (control limit, CL), distribuído entre os limites superior e inferior (upper-limit, UCL, e lower-limit, LCL). Onde a parametrização esperada da sua dinâmica será definida como:
+CASO UNITÁRIO - O processo também será considerado invariante, centrado na medida central (control limit, CL), distribuído entre os limites superior e inferior (upper-limit, UCL, e lower-limit, LCL). Onde a parametrização esperada da sua dinâmica será definida como e $\mathbb{P}(Y < LCL) = \mathbb{P}(Y > UCL) = \pi /2$:
 
 &emsp; CL = $\mathbb{E(\text{Y})}$ ou MED(Y), que será a média/mediana do processo
 
