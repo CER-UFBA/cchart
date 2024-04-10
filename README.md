@@ -39,7 +39,7 @@ O repositório está organizado da seguinte maneira:
 | `uhn.stan`      | unit-half-normal | $` \displaystyle f(y;a) = \frac{2(2a^2(1 − y)^2 − y)}{a^3(1 − y)^5} \phi\left( \frac{y}{a(1 − y)}\right) `$ | $a > 0$ |
 | `ul.stan`       | unit-Lindley    | $` \displaystyle f(y;\mu)= \frac{(1 - \mu)^2 \times exp\left(-\frac{y(1- \mu)}{\mu(1-y)} \right)}{\mu(1- y)^3} `$ | $\mu > 0$ |
 
-onde $\phi(\cdot)$ é a função de densidade da normal padrão
+<p align="right">onde $\phi(\cdot)$ é a função de densidade da normal padrão.</p>
 
 
 - A pasta "aplication" contém os arquivos R e que originam a Figura 1 do artigo com a aplicação de uma amostra dos registros mínimos diários da umidade relativa do ar da cidade de Copiapó - Atacama/Chile.
