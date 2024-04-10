@@ -14,9 +14,9 @@ CASO UNITÁRIO - O processo também será considerado invariante, centrado na me
 
 &emsp; CL = $\mathbb{E(\text{Y})}$ ou MED(Y), que será a média/mediana do processo
 
-&emsp; LCL =  $Q(\phi / 2)$, onde $Q(\cdot)$ é a função quantil
+&emsp; LCL =  $Q(\pi / 2)$, onde $Q(\cdot)$ é a função quantil
 
-&emsp; UCL =  $Q( 1- \phi / 2)$
+&emsp; UCL =  $Q( 1- \pi / 2)$
 
 O repositório está organizado da seguinte maneira:
 
