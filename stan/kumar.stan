@@ -32,8 +32,8 @@ parameters {
 // The model to be estimated.
 model {
   // PRIORS
-  alp ~ normal(0,2.5);
-  bet ~ normal(0,2.5);
+  alp ~ gamma(0.001,0.001);
+  bet ~ gamma(0.001,0.001);
   // LIKELIHOOD
   Y ~ KUM(alp, bet);
 }
