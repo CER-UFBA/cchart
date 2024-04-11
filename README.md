@@ -30,7 +30,7 @@ O repositório está organizado da seguinte maneira:
 | --- | --- | --- | --- |
 | --- | **(Countable Response Variable)** | --- | --- |
 | `PLindley.stan` | Poisson-Lindley | $` \displaystyle f(y;t)= \frac{(t + y + 2) \times (t + 1)^{-y}}{(t + 1)^3 \times t^{-2}} `$ | $t > 0$ |
-| `PShanker.stan` | Poisson-Shanker | $` \displaystyle f(y;h)= \frac{(h^2 + h + y + 1) \times (h + 1)^{-y}}{(h + 1)^2 \times (h^2 + 1) \times h^{-2}} `$ | $h > 0$ |
+| `PShanker.stan` | Poisson-Shanker | $` \displaystyle f(y;\mu)= \frac{(h^2 + h + y + 1) \times (h + 1)^{-y}}{(h + 1)^2 \times (h^2 + 1) \times h^{-2}} `$, onde $`h = \frac{1}{3\mu} \times (1+c/2-2 \times \frac{3\mu^2 - 1}{c}) `$, e $` c = [ 12\mu \sqrt{3(4\mu^4 + 71\mu^2 + 8)} + 180\mu^2 + 8 ] ^ {1∕3} `$ | $\mu > 0$ |
 | `PSujatha.stan` | Poisson-Sujatha | $` \displaystyle f(y;t)= \frac{t^3 \times (y^2 + y \times (t + 4) + (t^2 + 3 \times t + 4)}{((t + 1)^{y+3}), \times (t^2 + t + 2)} `$ | $t > 0$ |
 | `Pois.stan`     | Poisson         | $` \displaystyle f(y;\lambda )={\frac{e^{-\lambda }\lambda ^{y}}{y!}} `$ | $\lambda > 0$ |
 | --- | **(Unit Response Variable)**  | --- | --- |
